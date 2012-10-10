@@ -1,0 +1,15 @@
+﻿@model Sunkist.OlarkLiveChat.Models.LiveChatSettingsPart
+
+<img src="@Href("~/Modules/Sunkist.OlarkLiveChat/Content/Admin/Images/logo.png")" alt="logo"/>
+<fieldset>
+    <legend></legend>
+    <div>
+        @Html.CheckBoxFor(m => m.Enable) @T("Enable")
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.Script)">@T("Script")</label>
+        @Html.TextAreaFor(m => m.Script, 20, 60, null)
+        <span class="hint">@T("Copy and paste the JavaScript provided by ")<a href="http://www.olark.com/" target="_blank">@T("Olark")</a>.</span>
+        @Html.ValidationMessage("Script", "*")
+    </div>
+</fieldset>

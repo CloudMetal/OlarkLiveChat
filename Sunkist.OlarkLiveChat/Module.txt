@@ -1,0 +1,8 @@
+﻿Name: Olark Live Chat
+AntiForgery: enabled
+Author: David Hayden
+Website: http://www.davidhayden.me/
+Version: 1.5
+OrchardVersion: 1.5
+Description: Adds Olark Live Chat to your website.
+Category: Social
